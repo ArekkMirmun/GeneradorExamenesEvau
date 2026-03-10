@@ -332,11 +332,19 @@ def build_exam_pdf(sections, labels, exam_id, output_dir, asig_tag, solved=False
     cover = doc.new_page(width=595, height=842)
     tw = fitz.TextWriter(cover.rect)
     tw.append((120, 80), asig_display, font=font_bold, fontsize=20)
-    tw.append((200, 115), f"EXAMEN {exam_id}", font=font_bold, fontsize=16)
-    if solved:
-        tw.append((220, 145), "VERSION RESUELTA", font=font_bold, fontsize=12)
 
-    y = 180
+    # Date from output folder name (YYYY-MM-DD)
+    folder_date = Path(output_dir).name
+    tw.append((150, 115), f"EXAMEN {exam_id}  —  {folder_date}", font=font_bold, fontsize=16)
+    if solved:
+        tw.append((220, 140), "VERSION RESUELTA", font=font_bold, fontsize=12)
+
+    # File path
+    abs_path = str(out_path.resolve())
+    tw.append((50, 155), abs_path, font=font_normal, fontsize=7)
+    tw.write_text(cover)
+
+    y = 170
     exercise_num = 1
     for sec_key in sections:
         y += 20
