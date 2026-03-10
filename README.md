@@ -57,10 +57,6 @@ Descarga el archivo ZIP desde la ultima release:
 
 El ZIP contiene el ejecutable y la carpeta `ejercicios/` lista para usar. Unzip y ejecuta `GeneradorExamenes_Publica.exe`.
 
-## Licencia
-
-[![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
 Este proyecto esta licenciado bajo [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — puedes usar, compartir y adaptar libremente, siempre que sea **sin fines comerciales** y mantengas la misma licencia.
 
 Los ejercicios proceden de examenes oficiales de Selectividad de Andalucía, que son documentos publicos. Este repositorio no incluye soluciones ni material con copyright.
