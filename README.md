@@ -87,7 +87,7 @@ dist/                                    # Ejecutable empaquetado
 
 Descarga el archivo ZIP desde la ultima release:
 
-**[⬇ Descargar GeneradorExamenes.zip](https://github.com/ArekkMirmun/GeneradorExamenesEvau/releases/latest)**
+**[⬇ Descargar GeneradorExamenes.zip](https://github.com/ArekkMirmun/GeneradorExamenesEvau/releases/latest/download/GeneradorExamenes.zip)**
 
 El ZIP contiene el ejecutable y la carpeta `ejercicios/` lista para usar. Descomprime y ejecuta `GeneradorExamenes_Publica.exe`.
 
