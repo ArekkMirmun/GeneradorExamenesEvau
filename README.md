@@ -1,6 +1,24 @@
-# Generador de Examenes Selectividad (Publico)
+# Generador de Examenes Selectividad 
+<p align="center">
+  Crea exámenes personalizados de <b>Matemáticas II</b> y <b>Mates CCSS</b> en segundos.
+</p>
 
-Herramienta para generar examenes de practica de Selectividad (EvAU/EBAU) de Andalucía a partir de ejercicios oficiales.
+<p align="center">
+  <a href="https://arekkmirmun.github.io/GeneradorExamenesEvauMatematicas/">
+    <img 
+      src="https://raw.githubusercontent.com/ArekkMirmun/GeneradorExamenesEvauMatematicas/refs/heads/main/webSS.png" 
+      alt="Vista previa del generador" 
+      width="900">
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://arekkmirmun.github.io/GeneradorExamenesEvauMatematicas/">
+    <img 
+      src="https://img.shields.io/badge/ABRIR%20GENERADOR-EXÁMENES%20EVAU%20MATES-008080?style=for-the-badge&logo=github&logoColor=white" 
+      alt="Ir al generador online" />
+  </a>
+</p>
 
 Creada para el apoyo a los estudiantes a la hora de estudiar.
 
