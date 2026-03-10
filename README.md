@@ -1,6 +1,7 @@
-# Generador de Examenes Selectividad 
+# Generador de Examenes Selectividad
+
 <p align="center">
-  Crea exámenes personalizados de <b>Matemáticas II</b> y <b>Mates CCSS</b> en segundos.
+  Crea exámenes personalizados de <b>Matematicas II</b>, <b>Matematicas Aplicadas a las Ciencias Sociales (CCSS)</b>,<b>Fisica</b> y <b>Quimica</b> en segundos.
 </p>
 
 <p align="center">
@@ -15,7 +16,7 @@
 <p align="center">
   <a href="https://arekkmirmun.github.io/GeneradorExamenesEvauMatematicas/">
     <img 
-      src="https://img.shields.io/badge/ABRIR%20GENERADOR-EXÁMENES%20EVAU%20MATES-008080?style=for-the-badge&logo=github&logoColor=white" 
+      src="https://img.shields.io/badge/ABRIR%20GENERADOR-EXÁMENES%20EVAU%20-008080?style=for-the-badge&logo=github&logoColor=white" 
       alt="Ir al generador online" />
   </a>
 </p>

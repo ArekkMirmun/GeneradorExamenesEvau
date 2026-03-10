@@ -1,30 +1,55 @@
 ---
 /* Materias y temas section — real data with progress bars */
-const matII = {
-  name: 'Matemáticas II',
-  total: 363,
-  color: 'teal',
-  temas: [
-    { name: 'Integrales', count: 93 },
-    { name: 'Geometría', count: 93 },
-    { name: 'Funciones', count: 79 },
-    { name: 'Sistemas', count: 49 },
-    { name: 'Matrices', count: 43 },
-  ],
-};
-
-const matCCSS = {
-  name: 'Matemáticas CCSS',
-  total: 374,
-  color: 'emerald',
-  temas: [
-    { name: 'Teoría de muestras', count: 95 },
-    { name: 'Funciones', count: 94 },
-    { name: 'Probabilidad', count: 92 },
-    { name: 'Programación lineal', count: 47 },
-    { name: 'Matrices', count: 43 },
-  ],
-};
+const subjects = [
+  {
+    name: 'Matemáticas II',
+    total: 363,
+    temas: [
+      { name: 'Integrales', count: 93 },
+      { name: 'Geometría', count: 93 },
+      { name: 'Funciones', count: 79 },
+      { name: 'Sistemas', count: 49 },
+      { name: 'Matrices', count: 43 },
+    ],
+  },
+  {
+    name: 'Matemáticas CCSS',
+    total: 374,
+    temas: [
+      { name: 'Teoría de muestras', count: 95 },
+      { name: 'Funciones', count: 94 },
+      { name: 'Probabilidad', count: 92 },
+      { name: 'Programación lineal', count: 47 },
+      { name: 'Matrices', count: 43 },
+    ],
+  },
+  {
+    name: 'Física',
+    total: 353,
+    temas: [
+      { name: 'Campo eléctrico y magnético', count: 89 },
+      { name: 'Campo gravitatorio', count: 88 },
+      { name: 'Física cuántica y nuclear', count: 88 },
+      { name: 'Ondas', count: 58 },
+      { name: 'Óptica geométrica', count: 30 },
+    ],
+  },
+  {
+    name: 'Química',
+    total: 496,
+    temas: [
+      { name: 'Estructura del átomo', count: 76 },
+      { name: 'Reacciones redox', count: 76 },
+      { name: 'Ácido-base', count: 71 },
+      { name: 'Equilibrio químico', count: 71 },
+      { name: 'Formulación química', count: 54 },
+      { name: 'Química orgánica', count: 49 },
+      { name: 'Equilibrio de precipitación', count: 46 },
+      { name: 'Enlaces químicos', count: 44 },
+      { name: 'Energía de reacciones', count: 9 },
+    ],
+  },
+];
 
 function percent(count: number, max: number) {
   return Math.round((count / max) * 100);
@@ -35,11 +60,11 @@ function percent(count: number, max: number) {
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-2xl mx-auto mb-16">
       <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Materias y temas</h2>
-      <p class="mt-4 text-gray-600 text-lg">737 ejercicios organizados por asignatura y tema.</p>
+      <p class="mt-4 text-gray-600 text-lg">1586 ejercicios organizados en 4 asignaturas.</p>
     </div>
 
     <div class="grid md:grid-cols-2 gap-8">
-      {[matII, matCCSS].map(mat => (
+      {subjects.map(mat => (
         <div class="rounded-2xl border border-gray-100 bg-gray-50/50 p-8">
           <div class="flex items-baseline justify-between mb-6">
             <h3 class="text-xl font-bold text-gray-900">{mat.name}</h3>
