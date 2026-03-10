@@ -51,7 +51,9 @@ dist/                          # Ejecutable empaquetado
 
 ### Descargar
 
-Dirigete a la seccion [**Releases**](../../releases/latest) del repositorio y descarga el archivo `.zip` de la ultima version.
+Descarga el archivo ZIP desde la ultima release:
+
+**[⬇ Descargar GeneradorExamenMates.zip](https://github.com/ArekkMirmun/GeneradorExamenesEvauMatematicas/releases/download/RELEASE/GeneradorExamenMates.zip)**
 
 El ZIP contiene el ejecutable y la carpeta `ejercicios/` lista para usar. Unzip y ejecuta `GeneradorExamenes_Publica.exe`.
 
