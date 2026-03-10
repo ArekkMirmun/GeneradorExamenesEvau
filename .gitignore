@@ -22,3 +22,8 @@ dist/
 # OS
 Thumbs.db
 .DS_Store
+
+# Web (Astro landing page)
+web/node_modules/
+web/dist/
+web/.astro/

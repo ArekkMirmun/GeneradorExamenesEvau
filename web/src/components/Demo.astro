@@ -1,0 +1,78 @@
+---
+/* Screenshot / Demo section — shows the app interface in a desktop window mockup */
+const base = import.meta.env.BASE_URL;
+---
+
+<section id="demo" class="py-24 sm:py-32 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Interfaz sencilla y directa</h2>
+      <p class="mt-4 text-gray-600 text-lg">Selecciona, configura y genera tu examen en segundos.</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Desktop window mockup -->
+      <div class="order-2 lg:order-1">
+        <div class="rounded-xl overflow-hidden shadow-2xl border border-gray-200 bg-white">
+          <!-- Title bar -->
+          <div class="flex items-center gap-2 px-4 py-3 bg-gray-100 border-b border-gray-200">
+            <span class="w-3 h-3 rounded-full bg-red-400"></span>
+            <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
+            <span class="w-3 h-3 rounded-full bg-green-400"></span>
+            <span class="ml-3 text-xs text-gray-500 font-medium">GeneradorExamenes_Publica.exe</span>
+          </div>
+          <!-- App screenshot -->
+          <img
+            src={`public/image.png`}
+            alt="Interfaz de la aplicación GeneradorExámenes mostrando el selector de asignatura, checkboxes de temas y campo de semilla"
+            class="w-full h-auto"
+            loading="lazy"
+          />
+        </div>
+      </div>
+
+      <!-- Feature callouts -->
+      <div class="order-1 lg:order-2 space-y-8">
+        <div>
+          <h3 class="font-semibold text-gray-900 text-lg flex items-center gap-2">
+            <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center text-sm font-bold">1</span>
+            Selector de asignatura
+          </h3>
+          <p class="mt-2 text-gray-600 ml-10">
+            Elige entre Matemáticas II, Matemáticas CCSS o ambas para generar exámenes mixtos.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-gray-900 text-lg flex items-center gap-2">
+            <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center text-sm font-bold">2</span>
+            Checkboxes de temas
+          </h3>
+          <p class="mt-2 text-gray-600 ml-10">
+            Marca solo los temas que quieres practicar. Puedes seleccionar todos o solo un subconjunto específico.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-gray-900 text-lg flex items-center gap-2">
+            <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center text-sm font-bold">3</span>
+            Campo de semilla
+          </h3>
+          <p class="mt-2 text-gray-600 ml-10">
+            Introduce una semilla numérica para reproducir exactamente el mismo examen. Ideal para compartir con compañeros.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-gray-900 text-lg flex items-center gap-2">
+            <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-700 flex items-center justify-center text-sm font-bold">4</span>
+            Generar examen
+          </h3>
+          <p class="mt-2 text-gray-600 ml-10">
+            Un clic y obtienes un PDF A4 con estructura oficial listo para imprimir.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

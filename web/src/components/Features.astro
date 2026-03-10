@@ -1,0 +1,53 @@
+---
+const features = [
+  {
+    icon: '🎲',
+    title: 'Generación aleatoria con estructura oficial',
+    description: 'Exámenes con bloques obligatorios y optativos siguiendo el formato real de Selectividad de Andalucía.',
+  },
+  {
+    icon: '📐',
+    title: 'Dos asignaturas de Matemáticas',
+    description: 'Genera exámenes de Matemáticas II, Matemáticas CCSS, o combina ambas en un examen mixto.',
+  },
+  {
+    icon: '☑️',
+    title: 'Filtrado por temas',
+    description: 'Selecciona los temas específicos que quieres practicar con checkboxes individuales por materia.',
+  },
+  {
+    icon: '📄',
+    title: 'PDF A4 listo para imprimir',
+    description: 'Los exámenes se generan en PDF con formato A4 y se abren automáticamente para imprimir o resolver.',
+  },
+  {
+    icon: '🔢',
+    title: 'Numeración y semilla reproducible',
+    description: 'Numeración persistente entre sesiones. Usa una semilla para generar el mismo examen cuando quieras.',
+  },
+  {
+    icon: '📚',
+    title: '737 ejercicios oficiales reales',
+    description: 'Todos los ejercicios están extraídos de exámenes oficiales de Selectividad de Andalucía (2018–2025).',
+  },
+];
+---
+
+<section id="caracteristicas" class="py-24 sm:py-32 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Características principales</h2>
+      <p class="mt-4 text-gray-600 text-lg">Todo lo que necesitas para practicar con exámenes realistas.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {features.map(f => (
+        <div class="group rounded-2xl border border-gray-100 bg-gray-50/50 p-6 transition-all hover:shadow-lg hover:shadow-teal-600/5 hover:border-teal-200 hover:-translate-y-1">
+          <div class="text-3xl mb-4">{f.icon}</div>
+          <h3 class="font-semibold text-gray-900 text-lg mb-2">{f.title}</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">{f.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

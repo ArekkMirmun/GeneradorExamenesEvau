@@ -1,0 +1,50 @@
+---
+const faqs = [
+  {
+    question: '¿Es compatible con Mac o Linux?',
+    answer: 'No. La aplicación solo funciona en Windows. No es compatible con macOS ni Linux. Es un ejecutable .exe que requiere Windows para funcionar.',
+  },
+  {
+    question: '¿Incluye las soluciones de los ejercicios?',
+    answer: 'No. La herramienta genera exámenes de práctica con los enunciados originales, pero no incluye soluciones ni correcciones.',
+  },
+  {
+    question: '¿Qué convocatorias están incluidas?',
+    answer: 'Incluye 737 ejercicios extraídos de los exámenes oficiales de Selectividad de Andalucía desde 2018 hasta 2025.',
+  },
+  {
+    question: '¿Qué es la semilla reproducible?',
+    answer: 'La semilla es un número que controla la aleatoriedad. Si introduces la misma semilla con la misma configuración de temas, obtendrás exactamente el mismo examen. Es útil para compartir un examen concreto con compañeros o profesores.',
+  },
+  {
+    question: '¿Necesito conexión a internet?',
+    answer: 'No. Todo funciona en local. Los ejercicios están incluidos en el ZIP descargable y no se requiere conexión para generar exámenes.',
+  },
+  {
+    question: '¿Es necesario instalar algo?',
+    answer: 'No. Solo descomprime el ZIP y ejecuta el .exe. No requiere instalación, ni Python, ni librerías adicionales.',
+  },
+];
+---
+
+<section id="faq" class="py-24 sm:py-32 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Preguntas frecuentes</h2>
+    </div>
+
+    <dl class="space-y-6">
+      {faqs.map(faq => (
+        <details class="group rounded-2xl border border-gray-100 bg-gray-50/50 overflow-hidden transition-all hover:border-teal-200">
+          <summary class="flex items-center justify-between cursor-pointer px-6 py-5 text-left font-semibold text-gray-900 select-none">
+            <span>{faq.question}</span>
+            <span class="ml-4 flex-shrink-0 text-gray-400 group-open:rotate-45 transition-transform text-xl leading-none">+</span>
+          </summary>
+          <div class="px-6 pb-5 text-gray-600 leading-relaxed">
+            {faq.answer}
+          </div>
+        </details>
+      ))}
+    </dl>
+  </div>
+</section>

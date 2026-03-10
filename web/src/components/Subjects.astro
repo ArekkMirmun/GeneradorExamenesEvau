@@ -1,0 +1,71 @@
+---
+/* Materias y temas section — real data with progress bars */
+const matII = {
+  name: 'Matemáticas II',
+  total: 363,
+  color: 'teal',
+  temas: [
+    { name: 'Integrales', count: 93 },
+    { name: 'Geometría', count: 93 },
+    { name: 'Funciones', count: 79 },
+    { name: 'Sistemas', count: 49 },
+    { name: 'Matrices', count: 43 },
+  ],
+};
+
+const matCCSS = {
+  name: 'Matemáticas CCSS',
+  total: 374,
+  color: 'emerald',
+  temas: [
+    { name: 'Teoría de muestras', count: 95 },
+    { name: 'Funciones', count: 94 },
+    { name: 'Probabilidad', count: 92 },
+    { name: 'Programación lineal', count: 47 },
+    { name: 'Matrices', count: 43 },
+  ],
+};
+
+function percent(count: number, max: number) {
+  return Math.round((count / max) * 100);
+}
+---
+
+<section id="materias" class="py-24 sm:py-32 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900">Materias y temas</h2>
+      <p class="mt-4 text-gray-600 text-lg">737 ejercicios organizados por asignatura y tema.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      {[matII, matCCSS].map(mat => (
+        <div class="rounded-2xl border border-gray-100 bg-gray-50/50 p-8">
+          <div class="flex items-baseline justify-between mb-6">
+            <h3 class="text-xl font-bold text-gray-900">{mat.name}</h3>
+            <span class="text-sm font-medium text-teal-700 bg-teal-100 px-3 py-1 rounded-full">
+              {mat.total} ejercicios
+            </span>
+          </div>
+
+          <ul class="space-y-4">
+            {mat.temas.map(tema => (
+              <li>
+                <div class="flex items-center justify-between mb-1.5">
+                  <span class="text-sm font-medium text-gray-700">{tema.name}</span>
+                  <span class="text-xs text-gray-500 tabular-nums">{tema.count}</span>
+                </div>
+                <div class="w-full h-2 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    class="h-full bg-teal-500 rounded-full transition-all duration-500"
+                    style={`width: ${percent(tema.count, mat.temas[0].count)}%`}
+                  ></div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

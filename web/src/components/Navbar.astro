@@ -1,0 +1,41 @@
+---
+const DOWNLOAD_URL = 'https://github.com/ArekkMirmun/GeneradorExamenesEvauMatematicas/releases/download/RELEASE/GeneradorExamenMates.zip';
+
+const navLinks = [
+  { href: '#caracteristicas', label: 'Características' },
+  { href: '#materias', label: 'Materias' },
+  { href: '#como-funciona', label: 'Cómo funciona' },
+  { href: '#faq', label: 'FAQ' },
+];
+---
+
+<nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-lg border-b border-gray-100">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <a href="#" class="flex items-center gap-2 font-bold text-lg text-gray-900">
+        <span class="w-8 h-8 bg-teal-600 rounded-lg flex items-center justify-center text-white text-sm font-bold">E</span>
+        <span class="hidden sm:inline">GeneradorExámenes</span>
+      </a>
+
+      <!-- Desktop links -->
+      <div class="hidden md:flex items-center gap-8">
+        {navLinks.map(link => (
+          <a href={link.href} class="text-sm text-gray-600 hover:text-teal-700 transition-colors">
+            {link.label}
+          </a>
+        ))}
+      </div>
+
+      <!-- CTA -->
+      <a
+        href={DOWNLOAD_URL}
+        class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-all hover:shadow-lg hover:shadow-teal-600/25"
+      >
+        <span>⬇</span>
+        <span class="hidden sm:inline">Descargar</span>
+        <span class="sm:hidden">ZIP</span>
+      </a>
+    </div>
+  </div>
+</nav>
